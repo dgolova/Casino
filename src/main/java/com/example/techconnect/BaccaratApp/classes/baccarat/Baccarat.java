@@ -1,13 +1,14 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.classes.baccarat;
 
+import com.example.techconnect.BaccaratApp.classes.*;
 import com.example.techconnect.BaccaratApp.models.User;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
+
 @Component
-public class Baccarat implements IShuffle{
+public class Baccarat implements IShuffle {
 
     ArrayList<Deck> decks;
     ArrayList<Card> bigDeck;
@@ -42,7 +43,7 @@ public class Baccarat implements IShuffle{
             decks.add(deck);
         }
         for(Deck deck1: decks){
-            for(Card card: deck1.stack){
+            for(Card card: deck1.getStack()){
                 bigDeck.add(card);
             }
         }

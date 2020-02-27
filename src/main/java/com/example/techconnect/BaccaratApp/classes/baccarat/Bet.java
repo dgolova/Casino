@@ -1,4 +1,6 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.classes.baccarat;
+
+import com.example.techconnect.BaccaratApp.classes.Card;
 
 import java.util.ArrayList;
 

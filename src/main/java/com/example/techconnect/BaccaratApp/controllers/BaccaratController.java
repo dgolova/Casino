@@ -1,6 +1,9 @@
 package com.example.techconnect.BaccaratApp.controllers;
 
 import com.example.techconnect.BaccaratApp.classes.*;
+import com.example.techconnect.BaccaratApp.classes.baccarat.Baccarat;
+import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
+import com.example.techconnect.BaccaratApp.classes.baccarat.Choice;
 import com.example.techconnect.BaccaratApp.models.BetLog;
 import com.example.techconnect.BaccaratApp.models.User;
 import com.example.techconnect.BaccaratApp.repositories.BetLogRepository;
@@ -30,7 +33,6 @@ public class BaccaratController {
 
     @PostMapping(value = "/user/register")
     public ResponseEntity<User> userLogin (@RequestBody User user) {
-//        user.addToWallet(user.getWallet());
         userRepository.save(user);
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
@@ -44,7 +46,6 @@ public class BaccaratController {
             user.setChoice(BetChoice.PLAYER.toString());
             response.setResponse("BetChoice recorded");
             response.setSuccess(true);
-            //betLog.setBetOption(user.getChoice().toString());
             userRepository.save(user);
             return new ResponseEntity<>(response, HttpStatus.OK);
         }

@@ -1,5 +1,5 @@
-//import com.example.techconnect.BaccaratApp.classes.Baccarat;
-//import com.example.techconnect.BaccaratApp.classes.BetChoice;
+//import com.example.techconnect.BaccaratApp.classes.baccarat.Baccarat;
+//import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
 //import com.example.techconnect.BaccaratApp.classes.Participant;
 //
 //import java.util.*;
@@ -22,31 +22,31 @@
 //
 //        for(int i=0; i<numOfPlayers; i++){
 //            String hand = "";
-//            System.out.println("Who are you betting on (com.example.techconnect.BaccaratApp.classes.Banker, com.example.techconnect.BaccaratApp.classes.Player, Tie): com.example.techconnect.BaccaratApp.classes.Player "+ (int)(i+1));
+//            System.out.println("Who are you betting on (com.example.techconnect.BaccaratApp.classes.baccarat.Banker, com.example.techconnect.BaccaratApp.classes.baccarat.Player, Tie): com.example.techconnect.BaccaratApp.classes.baccarat.Player "+ (int)(i+1));
 //
 //            while(true){
 //                hand = sc.next();
 //
-//                if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.Banker") || hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.Player")
+//                if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.baccarat.Banker") || hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.baccarat.Player")
 //                        || hand.equalsIgnoreCase("Tie")){
 //                    break;
 //                }
 //                else{
-//                    System.out.println("Re-enter who you're betting on (com.example.techconnect.BaccaratApp.classes.Banker, com.example.techconnect.BaccaratApp.classes.Player, Tie)");
+//                    System.out.println("Re-enter who you're betting on (com.example.techconnect.BaccaratApp.classes.baccarat.Banker, com.example.techconnect.BaccaratApp.classes.baccarat.Player, Tie)");
 //                }
 //            }
 //
 //
 //
-//            System.out.println("How much are you willing to bet: com.example.techconnect.BaccaratApp.classes.Player "+ (int)(i+1));
+//            System.out.println("How much are you willing to bet: com.example.techconnect.BaccaratApp.classes.baccarat.Player "+ (int)(i+1));
 //
 //            while(true){
 //                int amountOfBet = sc.nextInt();
 //                if(amountOfBet <= 11100){
-//                    if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.Banker")){
+//                    if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.baccarat.Banker")){
 //                        participant = new Participant(BetChoice.BANKER, amountOfBet);
 //                    }
-//                    else if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.Player")){
+//                    else if(hand.equalsIgnoreCase("com.example.techconnect.BaccaratApp.classes.baccarat.Player")){
 //                        participant = new Participant(BetChoice.PLAYER, amountOfBet);
 //                    }
 //                    else if(hand.equalsIgnoreCase("Tie")){
@@ -56,7 +56,7 @@
 //                    break;
 //                }
 //                else{
-//                    System.out.println("Do not bet what you cannot afford! com.example.techconnect.BaccaratApp.classes.Bet again.");
+//                    System.out.println("Do not bet what you cannot afford! com.example.techconnect.BaccaratApp.classes.baccarat.Bet again.");
 //                }
 //            }
 //
@@ -81,7 +81,7 @@
 //        int k = 0;
 //        for(Participant player: players){
 //            k++;
-//            System.out.println("com.example.techconnect.BaccaratApp.classes.Player "+ k+ " earned a total of "+ earnings.get(player));
+//            System.out.println("com.example.techconnect.BaccaratApp.classes.baccarat.Player "+ k+ " earned a total of "+ earnings.get(player));
 //        }
 //
 //    }

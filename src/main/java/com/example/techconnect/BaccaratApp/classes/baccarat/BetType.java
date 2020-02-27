@@ -1,4 +1,4 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.classes.baccarat;
 
 public enum BetType {
 

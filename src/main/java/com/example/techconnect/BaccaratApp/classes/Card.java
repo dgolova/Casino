@@ -1,9 +1,13 @@
 package com.example.techconnect.BaccaratApp.classes;
 
+import java.util.ArrayList;
+
 public class Card {
 
     private SuitType suit;
     private RankType rank;
+
+
 
     public Card(RankType rank, SuitType suit) {
         this.suit = suit;
@@ -25,4 +29,6 @@ public class Card {
     public int getValueFromRank(){
         return rank.getValue();
     }
+
+
 }

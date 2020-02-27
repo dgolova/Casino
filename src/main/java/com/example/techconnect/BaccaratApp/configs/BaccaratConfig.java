@@ -1,12 +1,8 @@
 package com.example.techconnect.BaccaratApp.configs;
 
-import com.example.techconnect.BaccaratApp.classes.Baccarat;
-import com.example.techconnect.BaccaratApp.classes.BetChoice;
-import com.example.techconnect.BaccaratApp.models.Statistics;
+import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.ArrayList;
 
 @Configuration
 public class BaccaratConfig {
@@ -22,5 +18,8 @@ public class BaccaratConfig {
     }
 
 
+    @Configuration
+    public static class BlackJackConfig {
 
+    }
 }

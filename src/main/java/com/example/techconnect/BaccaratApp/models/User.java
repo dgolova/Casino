@@ -1,12 +1,8 @@
 package com.example.techconnect.BaccaratApp.models;
 
-import com.example.techconnect.BaccaratApp.classes.Bet;
-import com.example.techconnect.BaccaratApp.classes.BetChoice;
-import com.example.techconnect.BaccaratApp.classes.BetType;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
-import java.util.HashMap;
 import java.util.List;
 
 @Entity

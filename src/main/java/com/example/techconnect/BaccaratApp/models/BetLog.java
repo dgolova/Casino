@@ -1,8 +1,5 @@
 package com.example.techconnect.BaccaratApp.models;
 
-import com.example.techconnect.BaccaratApp.classes.BetChoice;
-import com.sun.tools.javah.Gen;
-
 import javax.persistence.*;
 
 @Entity

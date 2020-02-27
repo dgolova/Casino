@@ -25,6 +25,18 @@ public class Deck implements IShuffle{
         return stack;
     }
 
+    public RankType getRank() {
+        return rank;
+    }
+
+    public SuitType getSuit() {
+        return suit;
+    }
+
+    public ArrayList<Card> getStack() {
+        return stack;
+    }
+
     public int getSize() {
         return stack.size();
     }
@@ -42,4 +54,9 @@ public class Deck implements IShuffle{
         }
         return cardRemoved;
     }
+
+//    public Card dealCard() {
+//        Card cardRemoved = stack.remove(0);
+//        return cardRemoved;
+//    }
 }

@@ -1,7 +1,7 @@
 //package com.example.techconnect.BaccaratApp.repositories;
 //
 //
-//import com.example.techconnect.BaccaratApp.classes.Baccarat;
+//import com.example.techconnect.BaccaratApp.classes.baccarat.Baccarat;
 //import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.stereotype.Repository;
 //

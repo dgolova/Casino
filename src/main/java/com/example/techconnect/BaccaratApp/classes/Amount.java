@@ -8,7 +8,7 @@ public class Amount {
         this.amount = amount;
     }
 
-    public Amount(){
+    public Amount() {
 
     }
 
@@ -19,4 +19,5 @@ public class Amount {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
 }

@@ -1,7 +1,6 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.classes.baccarat;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
 
 public class Choice {
 
