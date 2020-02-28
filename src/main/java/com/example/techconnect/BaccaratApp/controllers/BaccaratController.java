@@ -1,9 +1,10 @@
 package com.example.techconnect.BaccaratApp.controllers;
 
-import com.example.techconnect.BaccaratApp.classes.*;
-import com.example.techconnect.BaccaratApp.classes.baccarat.Baccarat;
-import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
-import com.example.techconnect.BaccaratApp.classes.baccarat.Choice;
+import com.example.techconnect.BaccaratApp.DTO.*;
+import com.example.techconnect.BaccaratApp.DTO.baccarat.Baccarat;
+import com.example.techconnect.BaccaratApp.DTO.baccarat.BetChoice;
+import com.example.techconnect.BaccaratApp.DTO.baccarat.Choice;
+import com.example.techconnect.BaccaratApp.DTO.baccarat.Result;
 import com.example.techconnect.BaccaratApp.models.BetLog;
 import com.example.techconnect.BaccaratApp.models.User;
 import com.example.techconnect.BaccaratApp.repositories.BetLogRepository;
@@ -23,19 +24,10 @@ public class BaccaratController {
     @Autowired
     BetLogRepository betLogRepository;
 
-
-    Response response = new Response();
-
     @Autowired
     UserRepository userRepository;
 
-
-
-    @PostMapping(value = "/user/register")
-    public ResponseEntity<User> userLogin (@RequestBody User user) {
-        userRepository.save(user);
-        return new ResponseEntity<>(user, HttpStatus.CREATED);
-    }
+    Response response = new Response();
 
     @PutMapping(value = "/user/{id}/baccarat/bet/choice")
     public ResponseEntity<Response> putBetChoice (@PathVariable long id, @RequestBody Choice choice) {
@@ -100,6 +92,7 @@ public class BaccaratController {
         betLog.setBetOption(user.getChoice().toString());
         betLog.setBetAmount(user.getBetAmount());
         betLog.setWinningBet(winningBet.toString());
+        betLog.setGame("Baccarat");
         betLogRepository.save(betLog);
         Result result = new Result(winningBet.toString(), baccarat.getPlayer().getHand(),
                 baccarat.getPlayer().getPoints(), baccarat.getBanker().getHand(),

@@ -1,6 +1,6 @@
-package com.example.techconnect.BaccaratApp.classes.baccarat;
+package com.example.techconnect.BaccaratApp.DTO.baccarat;
 
-import com.example.techconnect.BaccaratApp.classes.*;
+import com.example.techconnect.BaccaratApp.DTO.*;
 import com.example.techconnect.BaccaratApp.models.User;
 import org.springframework.stereotype.Component;
 

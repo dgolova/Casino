@@ -1,6 +1,6 @@
 package com.example.techconnect.BaccaratApp.configs;
 
-import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
+import com.example.techconnect.BaccaratApp.DTO.baccarat.BetChoice;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

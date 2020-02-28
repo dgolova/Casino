@@ -1,8 +1,10 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.DTO;
+
+import com.example.techconnect.BaccaratApp.DTO.baccarat.IShuffle;
 
 import java.util.*;
 
-public class Deck implements IShuffle{
+public class Deck implements IShuffle {
 
 
     RankType rank;

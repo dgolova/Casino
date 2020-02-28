@@ -1,8 +1,8 @@
 package com.example.techconnect.BaccaratApp.configs;
 
-import com.example.techconnect.BaccaratApp.classes.Deck;
-import com.example.techconnect.BaccaratApp.classes.blackJack.Dealer;
-import com.example.techconnect.BaccaratApp.classes.blackJack.Player;
+import com.example.techconnect.BaccaratApp.DTO.Deck;
+import com.example.techconnect.BaccaratApp.DTO.blackJack.Dealer;
+import com.example.techconnect.BaccaratApp.DTO.blackJack.Player;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

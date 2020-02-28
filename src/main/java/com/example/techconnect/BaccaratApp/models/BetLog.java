@@ -12,16 +12,19 @@ public class BetLog {
     private int betAmount;
     @Column(name = "bet_option")
     private String betOption;
-    @Column(name = "winning_bet")
+    @Column(name = "winner")
     private String winningBet;
+    @Column
+    private String game;
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    public BetLog(int betAmount, String betOption, String winningBet, User user) {
+    public BetLog(int betAmount, String betOption, String winningBet, String game, User user) {
         this.betAmount = betAmount;
         this.betOption = betOption;
         this.winningBet = winningBet;
+        this.game = game;
         this.user = user;
     }
 
@@ -67,6 +70,14 @@ public class BetLog {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getGame() {
+        return game;
+    }
+
+    public void setGame(String game) {
+        this.game = game;
     }
 }
 

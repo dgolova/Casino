@@ -1,4 +1,4 @@
-package com.example.techconnect.BaccaratApp.classes;
+package com.example.techconnect.BaccaratApp.DTO;
 
 public enum SuitType {
     HEARTS,

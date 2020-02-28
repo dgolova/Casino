@@ -1,6 +1,4 @@
-package com.example.techconnect.BaccaratApp.classes.baccarat;
-
-import com.example.techconnect.BaccaratApp.classes.baccarat.BetChoice;
+package com.example.techconnect.BaccaratApp.DTO.baccarat;
 
 public class Choice {
 

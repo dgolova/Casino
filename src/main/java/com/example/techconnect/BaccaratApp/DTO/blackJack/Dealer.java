@@ -1,4 +1,4 @@
-package com.example.techconnect.BaccaratApp.classes.blackJack;
+package com.example.techconnect.BaccaratApp.DTO.blackJack;
 
 public class Dealer extends Player {
 

@@ -1,6 +1,6 @@
-package com.example.techconnect.BaccaratApp.classes.baccarat;
+package com.example.techconnect.BaccaratApp.DTO.baccarat;
 
-import com.example.techconnect.BaccaratApp.classes.Card;
+import com.example.techconnect.BaccaratApp.DTO.Card;
 
 import java.util.ArrayList;
 

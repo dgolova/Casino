@@ -1,6 +1,4 @@
-package com.example.techconnect.BaccaratApp.classes;
-
-import java.util.ArrayList;
+package com.example.techconnect.BaccaratApp.DTO;
 
 public class Card {
 
