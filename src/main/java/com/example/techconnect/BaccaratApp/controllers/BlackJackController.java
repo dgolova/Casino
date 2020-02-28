@@ -52,16 +52,14 @@ public class BlackJackController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/user/{id}/blackjack/cards") // get cards (as a string) fro player or dealer
-    public ResponseEntity<Player> findCardsForPlayerOrDealer(
-            @PathVariable long id,
-            @RequestParam(name="player", required = false) String player){
+    @GetMapping(value = "/user/{id}/blackjack/cards")
+    public ResponseEntity<Player> findCardsForPlayerOrDealer(@PathVariable long id, @RequestParam(name="player", required = false) String player){
         Optional<User> foundUser = userRepository.findById(id);
         User user = foundUser.get();
-        if(player.equalsIgnoreCase("player")){ //http://localhost:8080/blackjack/cards?player=player
+        if(player.equalsIgnoreCase("player")){
             return new ResponseEntity<>(blackJack.selectPlayer(user.getId()), HttpStatus.OK);
         }
-        else if(player.equalsIgnoreCase("dealer")){ //http://localhost:8080/blackjack/cards?player=dealer
+        else if(player.equalsIgnoreCase("dealer")){
             user.setWallet(blackJack.cashOut(user));
             userRepository.save(user);
             BetLog betLog = new BetLog();

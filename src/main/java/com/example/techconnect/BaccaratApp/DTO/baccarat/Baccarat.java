@@ -263,12 +263,6 @@ public class Baccarat {
 
     }
 
-//    public int cashOutMoney(User user){
-//        totalMoneyEarned = 10*user.getNoOfCoins().get(BetType.TEN) + 100*user.getNoOfCoins().get(BetType.HUNDRED) +
-//                1000*user.getNoOfCoins().get(BetType.THOUSAND);
-//
-//        return totalMoneyEarned;
-//    }
 
     public void restart(){
         banker = new Banker();
