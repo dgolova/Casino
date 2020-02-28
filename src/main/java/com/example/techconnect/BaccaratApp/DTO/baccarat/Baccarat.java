@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 @Component
-public class Baccarat implements IShuffle {
+public class Baccarat {
 
     ArrayList<Deck> decks;
     ArrayList<Card> bigDeck;

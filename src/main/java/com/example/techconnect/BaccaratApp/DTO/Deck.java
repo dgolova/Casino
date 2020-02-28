@@ -1,7 +1,5 @@
 package com.example.techconnect.BaccaratApp.DTO;
 
-import com.example.techconnect.BaccaratApp.DTO.baccarat.IShuffle;
-
 import java.util.*;
 
 public class Deck implements IShuffle {
@@ -57,8 +55,4 @@ public class Deck implements IShuffle {
         return cardRemoved;
     }
 
-//    public Card dealCard() {
-//        Card cardRemoved = stack.remove(0);
-//        return cardRemoved;
-//    }
 }

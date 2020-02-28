@@ -31,11 +31,6 @@ public class User {
         this.wallet = wallet;
         this.choice = null;
         this.betAmount = 0;
-//        this.noOfCoins = new HashMap<BetType, Integer>();
-//        this.noOfCoins.put(BetType.TEN, 0);
-//        this.noOfCoins.put(BetType.HUNDRED, 0);
-//        this.noOfCoins.put(BetType.THOUSAND, 0);
-
     }
 
     public User(){
@@ -57,28 +52,6 @@ public class User {
     public void setBetAmount(int betAmount) {
         this.betAmount = betAmount;
     }
-
-//    public void addToWallet(int money){
-//        int thousandCoins = money/1000;
-//        this.noOfCoins.put(BetType.THOUSAND, this.noOfCoins.get(BetType.THOUSAND) + thousandCoins);
-//        money -= thousandCoins*1000;
-//        int hundredCoins = money/100;
-//        this.noOfCoins.put(BetType.HUNDRED, this.noOfCoins.get(BetType.HUNDRED) + hundredCoins);
-//        money -= hundredCoins*100;
-//        int tenCoins = money/10;
-//        this.noOfCoins.put(BetType.TEN, this.noOfCoins.get(BetType.TEN) + tenCoins);
-//    }
-
-//    public void removeFromWallet(int money){
-//        int thousandCoins = money/1000;
-//        this.noOfCoins.put(BetType.THOUSAND, this.noOfCoins.get(BetType.THOUSAND) - thousandCoins);
-//        money -= thousandCoins*1000;
-//        int hundredCoins = money/100;
-//        this.noOfCoins.put(BetType.HUNDRED, this.noOfCoins.get(BetType.HUNDRED) - hundredCoins);
-//        money -= hundredCoins*100;
-//        int tenCoins = money/10;
-//        this.noOfCoins.put(BetType.TEN, this.noOfCoins.get(BetType.TEN) - tenCoins);
-//    }
 
     public int getWallet() {
         return wallet;
