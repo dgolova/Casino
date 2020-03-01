@@ -29,7 +29,7 @@ public class BaccaratController {
 
     Response response = new Response();
 
-    @PutMapping(value = "/user/{id}/baccarat/bet/choice")
+    @PostMapping(value = "/user/{id}/baccarat/bet/choice")
     public ResponseEntity<Response> putBetChoice (@PathVariable long id, @RequestBody Choice choice) {
         Optional<User> foundUserOptional = userRepository.findById(id);
         User user = foundUserOptional.get();
@@ -63,7 +63,7 @@ public class BaccaratController {
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 
-    @PutMapping(value = "/user/{id}/baccarat/bet/amount")
+    @PostMapping(value = "/user/{id}/baccarat/bet/amount")
     public ResponseEntity<Response> putBetAmount (@PathVariable long id, @RequestBody Amount amount) {
         Optional<User> foundUser = userRepository.findById(id);
         User user = foundUser.get();

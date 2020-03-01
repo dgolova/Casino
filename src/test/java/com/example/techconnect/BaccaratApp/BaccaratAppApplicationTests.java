@@ -18,13 +18,6 @@ class BaccaratAppApplicationTests {
 	}
 }
 
-//	@Test
-//	public void canPlayBaccarat(){
-//		assertEquals(BetChoice.PLAYER, baccarat.getChoice());
-//		assertEquals(0, baccarat.getBetAmount());
-//		}
-//
-//	}
 
 
 

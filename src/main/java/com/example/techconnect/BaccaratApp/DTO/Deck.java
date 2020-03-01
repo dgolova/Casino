@@ -2,7 +2,7 @@ package com.example.techconnect.BaccaratApp.DTO;
 
 import java.util.*;
 
-public class Deck implements IShuffle {
+public class Deck {
 
 
     RankType rank;
